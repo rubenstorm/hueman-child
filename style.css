@@ -1,0 +1,660 @@
+/*
+Theme Name: Hueman-Child
+Version: 1.0
+Description: A child theme of Hueman
+Template: hueman
+*/
+
+@import url("../hueman/style.css");
+
+/* ------------------------------------------------------------------------- *
+ *  Import Google Font Api
+/* -------------------------------------------------------------------------  */
+@import url(http://fonts.googleapis.com/css?family=Patrick+Hand+SC|Macondo);
+
+
+#header { 
+    background: url('img/hbg.jpg'); 
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+}
+
+
+/* ------------------------------------------------------------------------- *
+ *  Make the typo
+/* -------------------------------------------------------------------------  */
+
+#wrapper {
+    font-family: 'Macondo', sans-serif;
+}
+
+#nav-header a {
+    font-weight: 600;
+}
+
+.entry {
+    font-family: 'Macondo', sans-serif;
+    font-size: 12pt;
+    font-weight: 200;
+    
+}
+
+.entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+
+.entry h1, .entry h2, h1, h2 {
+    font-family: 'Patrick Hand SC',sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: 700;
+    
+}
+
+.entry h1, h1 {
+    font-size: 18pt; 
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.entry h2, h2 {
+    font-size: 17pt;
+    letter-spacing: -0.3px;
+}
+
+.entry h3, .entry h4, h3, h4 {
+   font-family: 'Patrick Hand SC',sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: 500;
+}
+
+.entry h3, h3 {
+    font-size: 16pt;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.entry h4, h4 {
+    font-size: 15pt;
+    letter-spacing: -0.3px;
+}
+
+
+
+.entry h5, .entry h6, h5, h6 {
+    font-family: 'Macondo', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-variant: normal;
+    font-weight: 300;
+}
+
+.entry h5, h5 {
+    font-size: 13pt;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: -0.4px;
+}
+
+
+.entry h6, h6 {
+    font-size: 12pt;
+    letter-spacing: -0.6px;
+}
+
+div.author-bio {
+    border-radius: 8px 21px;
+    box-shadow: 4px 4px 4px #aaa;
+}
+
+div.author-bio:hover {
+    box-shadow: 1px 1px 1px #aaa;
+    cursor: pointer;
+    
+}
+
+div.author-bio > div.bio-avatar > img {
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #aaa;
+}
+
+div.author-bio > p.bio-name {
+    font-family: 'Patrick Hand SC',sans-serif;
+    text-shadow: 2px 2px 2px #aaa;
+    font-size: 14pt;
+}
+
+#copyright {
+    font-family: 'Patrick Hand SC',sans-serif;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+.entry a {
+    color: #47a;
+}
+
+a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+/*
+
+ul.related-posts li.related div.post-thumbnail {
+    display:block;
+    height:110px;
+    padding: 1px;
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+ul.related-posts li.related div.post-thumbnail:hover {
+    padding: 2px;
+}
+
+
+div.post-list.group article div.post-inner div.post-thumbnail  {
+    display:block;
+    max-height:160px;
+    padding: 1px;
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+div.featured article div.post-inner.post-hover > div.post-thumbnail{
+    display:block;
+    max-height:300px;
+    padding: 1px;
+    border-radius: 8px;
+    overflow:hidden;
+}
+*/
+div.img-rounded-shadow img {
+    border: 1px solid #aaa;
+    padding: 7px;
+    border-radius: 15px 40px;
+    box-shadow: 4px 4px 4px #aaa;
+    overflow: hidden;
+}
+
+div.img-rounded-shadow img:hover {
+    box-shadow: 2px 2px 2px #aaa;
+    margin: 2px;
+}
+
+
+/* ------------------------------------------------------------------------- *
+ *  Hide the featured images
+/* -------------------------------------------------------------------------  
+
+div.page-image div.image-container {
+ display: none;
+}
+
+div.post-format div.image-container  {
+ display: none;
+}
+*/
+
+article > div > div.post-format > div.image-container > img.attachment-thumb-large,
+article > div.page-image > div {
+    display: none;
+}
+
+/**
+    Format Google Search
+*/
+
+div.gs-title, 
+div.gsc-url-bottom, 
+div.gs-visibleUrl {
+    text-align: left;
+}
+
+div.gs-title {
+    font-family: 'Patrick Hand SC',sans-serif;
+    text-shadow: 2px 2px 2px #aaa;
+    color: #47a;
+    font-size: 20px;
+}
+
+div.gs-title a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+div.gs-snippet {
+    font-size: 11px;
+}
+
+div.gsc-url-bottom {
+    text-shadow: 1px 1px 1px #aaa;
+    font-size: 9px;
+}
+
+/**
+.gs-promotion-text-cell > div.gs-visibleUrl {
+
+}
+*/
+
+/* ------------------------------------------------------------------------- *
+ *  TML Widget
+/* -------------------------------------------------------------------------  */
+
+
+.widget_theme-my-login div.login h2 {
+    font-size: 11pt;
+}
+
+
+.widget_theme-my-login div.login form label {
+    font-size: 12pt;
+    font-family: comic sans ms,sans-serif;
+    font-weight: bold;
+}
+
+.widget_theme-my-login div.login form span.hint, 
+.widget_theme-my-login div.login p.message {
+    font-size: 9pt;
+    font-family: comic sans ms,sans-serif;
+    font-weight: bold;
+    font-color: #C0C0C0;
+    padding: 8px;
+}
+
+
+
+.widget_theme-my-login div.login form p input.input, 
+.widget_theme-my-login div.login form p.submit input, 
+.widget_theme-my-login div.login form input[type="field"] {
+    width: 100% !important;
+    font-size: 14pt;
+    font-family: comic sans ms,sans-serif;
+    font-weight: bold;
+}
+
+div#theme-my-login.login form#lostpasswordform p input#user_login.input {
+    width: 100% !important; 
+}
+
+
+.widget_theme-my-login div.login ul {
+    margin: 35px 0;
+    padding: 0;
+    font: 12px Verdana;
+    list-style-type: none;
+}
+
+.widget_theme-my-login div.login ul li {
+    display: inline;
+}
+
+.widget_theme-my-login div.login ul li a {
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    color: #47a;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.widget_theme-my-login div.login form p.forgetmenot input[type="checkbox"] {
+    display: none;
+}
+
+.widget_theme-my-login div.login form p.forgetmenot input[type="checkbox"] + label {
+    display:inline-block;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    font: 12px Verdana;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    color: #47a;
+    cursor:pointer;
+}
+
+.widget_theme-my-login div.login form p.forgetmenot input[type="checkbox"]:checked + label {
+    background-color: #47a;
+    color: #eee;
+    border: 1px inset #aaa;
+}
+
+
+/* ------------------------------------------------------------------------- *
+ *  Profile Form Setup
+/* -------------------------------------------------------------------------  */
+
+div#theme-my-login.login.profile table {
+    width: 100% !important;
+    border: 1px solid #aaa;
+
+}
+
+
+div#theme-my-login.login.profile input[type="password"],
+div#theme-my-login.login.profile input[type="submit"] {
+    width: 100% !important;
+}
+
+
+div#theme-my-login.login.profile input[type="text"],  
+div#theme-my-login.login.profile input[type="button"], 
+div#theme-my-login.login.profile textarea {
+    width: 100% !important;
+    font: 14px Verdana;
+    border: 1px solid #aaa;
+}
+
+div#theme-my-login.login.profile input[type="password"],
+div#theme-my-login.login.profile input[type="text"] {
+    height: 32px;
+}
+
+div#theme-my-login.login.profile input[type="button"] {
+    height: 48px;
+}
+
+
+form#your-profile span.description {
+    font: 10px Verdana;
+}
+
+form#your-profile p {
+    font: 11px Verdana;
+}
+
+form#your-profile label {
+    font: 12px Verdana;
+}
+
+
+form#your-profile p {
+    padding: 5px;
+}
+
+
+
+form#your-profile input[type="checkbox"] {
+    display: none;
+}
+
+form#your-profile label input[type="checkbox"],
+form#your-profile input[type="checkbox"] + label {
+    width: 100% !important;
+    display:inline-block;
+    padding: 8px 10px;
+    border: 1px solid #aaa;
+    margin:5px 0 5px 0;
+    vertical-align:middle;
+    font: 12px Verdana;
+    background-color: #eee;
+    color: #47a;
+    cursor:pointer;
+}
+
+form#your-profile input[type="checkbox"]:checked + label {
+    background-color: #47a;
+    color: #eee;
+    border: 1px inset #aaa;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------- *
+ *  Make Subpage Widget
+/* -------------------------------------------------------------------------  */
+
+
+.widget_subpages > ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.widget_subpages > ul > li > ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 15px;
+}
+
+.widget_subpages > ul > li > ul > li > ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 30px;
+}
+
+.widget_subpages > ul > li > ul > li > ul > li > ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 45px;
+}
+
+.widget_subpages > ul > li > ul > li > ul > li > ul > li > ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 60px;
+}
+
+.widget_subpages > ul > li > ul > li > ul > li > ul > li > ul > li > ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 75px;
+}
+
+
+li.widget_subpages_current_page > a {
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------- *
+ *  Make CatList Widget
+/* -------------------------------------------------------------------------  */
+
+/*
+.lcp_catlist {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+*/
+
+.lcp_catlist {
+    list-style-type: none;
+}
+
+
+.lcp_catlist > li > a {
+    display:inline-block;
+    border-radius: 5px 21px;
+    width: 100% !important;
+    padding: 10px 17px;
+    border: 1px solid #aaa;
+    margin:3px 4px 0 0;
+    vertical-align:middle;
+    font: 14px Verdana;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    color: #47a;
+    cursor:pointer;
+    letter-spacing: -0.3px;
+}
+
+
+
+/*
+.lcp_catlist > li a {
+    width: 100% !important;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    color: #47a;
+    text-decoration: none;
+}
+
+*/
+.lcp_catlist > li.current > a {
+    background-color: #47a;
+    color: #eee;
+    border: 1px inset #aaa;
+    text-decoration: none;
+}
+
+.lcp_catlist > li.current > a:href {
+    color: #FFFFFF;
+    border: 1px inset #aaa;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------------- *
+ *  Make Facebook Responsive
+/* -------------------------------------------------------------------------  */
+
+#fb-root {
+    display: none;
+}
+
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { 
+    width: 100% !important; 
+}
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+}
+
+
+
+
+/* ------------------------------------------------------------------------- *
+ *  Format Page Title
+/* -------------------------------------------------------------------------  */
+
+section.content div.page-title {
+    font-family: comic sans ms,sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* ------------------------------------------------------------------------- *
+ *  Breadcrumbs settings
+/* ------------------------------------------------------------------------- */
+
+
+#transparentesGlas {
+    background:rgba(129,129,129,0.5);
+    width: 100% !important;
+    height: 35px;
+    padding: 5px;
+}
+
+
+
+
+div#transparentesGlas div.breadcrumbs a {
+    color: #FFFFFF;
+}
+
+div#transparentesGlas div.breadcrumbs {
+    display: block;
+    width: 100% !important;
+    height: 35px;
+    padding: 3px;
+    font-family: comic sans ms,sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #DFDFDF;
+    opacity:1.00;
+}
+
+.breadcrumbs span[typeof="v:Breadcrumb"]:last-child span[property="v:title"],
+.breadcrumbs a[property="v:title"] {
+    display: inline-block;
+    padding: 0;
+    margin-top: -3px;
+    vertical-align: middle;
+    max-width: 95px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.breadcrumbs span[typeof="v:Breadcrumb"]:last-child span[property="v:title"]:hover,
+.breadcrumbs a[property="v:title"]:hover {
+    max-width: none;
+}
+
+
+/* ------------------------------------------------------------------------- *
+ *  Toggle Sidebar s2 : always
+/* ------------------------------------------------------------------------- */
+@media only screen and (min-width: 480px) {
+
+    .container { padding: 0 10px; }
+
+    /* s2 general */
+    .s2 { width: 50px; }
+    .s2 .sidebar-content { display: none; float: left; width: 100%; }
+    .s2 .sidebar-toggle { display: block; }
+
+    /* s2 expand/collapse */
+    .s2-expand .s2 { background: #f0f0f0; position: absolute; top: 0; bottom: 0; width: 260px; margin: 0!important; z-index: 9; overflow: auto;
+                     -moz-transition: width .2s ease; -webkit-transition: width .2s ease; transition: width .2s ease; }	
+    .s2-expand .s2 .sidebar-content { display: block; min-width: 260px; }
+    .s2-collapse .s2 .sidebar-content { display: none; }
+
+    /* s2 toggle icon */
+    .col-3cm.s2-expand .s2 .icon-sidebar-toggle:before,
+    .col-3cl.s2-expand .s2 .icon-sidebar-toggle:before { content: "\f101"; }
+    .col-3cr.s2-expand .s2 .icon-sidebar-toggle:before { content: "\f100"; }
+
+    /* s2 3 column, content middle */
+    .col-3cm .main { background: url(img/sidebar/s-right-collapse.png) repeat-y right; }
+    .col-3cm .main-inner { padding-right: 50px; }
+    .col-3cm .s2 { margin-right: -50px; }
+    .col-3cm.s2-expand .s2 { right: 0; }
+
+    /* ipad, iphone fix */
+    .safari .s2 { min-width: 50px; max-width: 50px; width: auto; }
+    .safari.s2-expand .s2 { min-width: 260px; max-width: 260px; width: auto; }
+
+}
+
+
+@media only screen and (min-width: 961px) {
+
+    /* 3 column, content right */
+    .col-3cl .main { background-image: none; }
+    .col-3cl .main-inner { background: url(img/sidebar/s-right-dual-half-collapse.png) repeat-y right; padding-right: 390px; }
+    .col-3cl .s1 { margin-right: -390px; }
+    .col-3cl .s2 { margin-right: -50px; }
+    .col-3cl.s2-expand .s2 { right: 340px; }
+
+    /* 3 column, content left */
+    .col-3cr .main { background-image: none; }
+    .col-3cr .main-inner { background: url(img/sidebar/s-left-dual-half-collapse.png) repeat-y left; padding-left: 390px; }
+    .col-3cr .s1 { margin-left: -390px; }
+    .col-3cr .s2 { margin-left: -50px; }
+    .col-3cr.s2-expand .s2 { left: 340px; }
+
+}
+
+
+/**
+    Responsive IFrames
+*/
+
+iframe {
+    max-width: 100%;
+}
